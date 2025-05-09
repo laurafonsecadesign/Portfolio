@@ -180,6 +180,15 @@ img {
   .work-filters{
     gap: 12px;
   }
+
+  .cursor {
+    display: none !important;
+  }
+  .project-image img {
+    max-height: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
 }
 
 
