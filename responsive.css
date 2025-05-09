@@ -1,0 +1,187 @@
+/* Responsive Styles for Laura Fonseca Portfolio */
+
+/* Base responsive adjustments */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hide mobile menu toggle by default */
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* Header Media Queries */
+@media (max-width: 992px) {
+  .main-header {
+    padding: 2rem 2rem;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  /* General spacing adjustments */
+  .project-container,
+  .gallery-item,
+  .project-process,
+  .next-project {
+    padding: 0 5%;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+  .separator, .secondary-title {
+    display: none !important;
+  }
+
+  /* --- HERO / BIO --- */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px 20px 20px;
+    height: 500px;
+    justify-content: flex-end;
+  }
+  .hero img.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .hero .name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .hero .subtitle {
+    font-size: 1rem;
+    line-height: 1.4;
+    max-width: 90%;
+  }
+  .about{
+    margin: 0px;
+  }
+
+  /* Project section adjustments */
+  
+  .project-title {
+    font-size: 5rem;
+  }
+  
+  .project-description {
+    width: 100%;
+    padding: 0;
+  }
+  
+  
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .gallery-grid-2,
+  .gallery-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .next-project {
+    padding: 3rem 5%;
+  }
+  
+  .next-title {
+    font-size: 2.5rem;
+  }
+  
+  /* Gallery adjustments */
+  .gallery-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .gallery-item.full {
+    margin-bottom: 2rem;
+  }
+  
+  .project-gallery {
+    padding: 2rem 0;
+  }
+  
+  .project-overview {
+    padding: 3rem 0 2rem;
+  }
+  
+  .project-process {
+    padding: 2rem 0 3rem;
+  }
+  
+  .process-item {
+    padding: 1.5rem;
+    background-color: rgba(0,0,0,0.02);
+    border-radius: 10px;
+  }
+  
+  .identity-container {
+    padding: 0 3% !important;
+    max-width: 94% !important;
+  }
+
+  .info-block {
+    position: relative;
+    width: calc(100vw - 20px);
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+  .info-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: max-content;
+    will-change: transform;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .info-item {
+    min-width: 260px;
+    max-width: 80vw;
+    border-radius: 16px;
+    padding: 18px 16px;
+    flex: 0 0 auto;
+    margin-bottom: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .info-col-left, .info-col-right {
+    display: contents;
+  }
+
+  .back-button span {
+    display: none;
+  }
+  .back-button img {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .back-button{
+    left: 20px;
+  }
+
+  .work-filters{
+    gap: 12px;
+  }
+}
+
+
+
