@@ -1151,4 +1151,29 @@ footer {
 
 .dot.filled {
   background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .project {
+    min-height: auto;
+    padding: 16px 0;
+    gap: 16px;
+  }
+
+  .project-image img {
+    height: 300px;
+    max-height: 300px;
+  }
+
+  .project:hover .project-image img {
+    transform: none;
+  }
+
+  .project:hover .project-image .project-details {
+    opacity: 0;
+  }
+
+  .project-image .project-details {
+    display: none;
+  }
 } 
