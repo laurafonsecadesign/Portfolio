@@ -48,15 +48,20 @@
   <header class="main-header">
     <div class="header-content">
       <div class="subtitle">
-        <span>Portfolio</span>
+        <span data-translate="portfolio">Portfolio</span>
         <span class="separator">—</span>
-        <span class="secondary-title">Multimedia & Graphic Design</span>
+        <span class="secondary-title" data-translate="multimedia_design">Multimedia & Graphic Design</span>
       </div>
       <nav>
         <ul>
-          <li><a href="index.html#about">ABOUT</a></li>
-          <li><a href="index.html#work">WORK</a></li>
-          <li><a href="index.html#contact">CONTACT</a></li>
+          <li><a href="index.html#about" data-translate="about">ABOUT</a></li>
+          <li><a href="index.html#work" data-translate="work">WORK</a></li>
+          <li><a href="index.html#contact" data-translate="contact">CONTACT</a></li>
+          <li class="language-selector">
+            <span id="lang-es" class="lang-option active">ES</span>
+            <span class="lang-separator">/</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </li>
         </ul>
       </nav>
     </div>
@@ -72,7 +77,7 @@
     <div class="back-button">
       <a href="index.html#work">
         <img src="arrow-back.svg" alt="Back to projects">
-        <span>Back to projects</span>
+        <span data-translate="back">Back to projects</span>
       </a>
     </div>
 
@@ -91,9 +96,9 @@
     <section class="project-overview">
       <div class="project-container">
         <div class="project-description">
-          <h2>Project Overview</h2>
-          <p>This project consisted of designing the interface for a restaurant app called La Llorona. The objective was to build a high-fidelity prototype in Figma, applying graphic and interface design principles.</p>
-          <p>The app was built to be intuitive and engaging, offering everything from digital menus with vibrant imagery to an integrated loyalty system that rewards user interaction.</p>
+          <h2 data-translate="project_overview">Project Overview</h2>
+          <p data-translate="project_text_1">This project consisted of designing the interface for a restaurant app called La Llorona. The objective was to build a high-fidelity prototype in Figma, applying graphic and interface design principles.</p>
+          <p data-translate="project_text_2">The app was built to be intuitive and engaging, offering everything from digital menus with vibrant imagery to an integrated loyalty system that rewards user interaction.</p>
         </div>
       </div>
     </section>
@@ -116,23 +121,23 @@
     <!-- Project Process -->
     <section class="project-process">
       <div class="project-container">
-        <h2>Design Process</h2>
+        <h2 data-translate="design_process">Design Process</h2>
         <div class="process-grid">
           <div class="process-item">
-            <h3>01. Research</h3>
-            <p>I started by identifying the main digital pain points in restaurant user experiences, such as fragmented services, outdated menus, and lack of engaging loyalty programs. Market data and competitor analysis revealed a growing demand for unified, intuitive platforms. These insights shaped the foundation for the app's core features.</p>
+            <h3 data-translate="research_title">01. Research</h3>
+            <p data-translate="research_text">I started by identifying the main digital pain points in restaurant user experiences, such as fragmented services, outdated menus, and lack of engaging loyalty programs. Market data and competitor analysis revealed a growing demand for unified, intuitive platforms. These insights shaped the foundation for the app's core features.</p>
           </div>
           <div class="process-item">
-            <h3>02. User Experience</h3>
-            <p>With the help of detailed user personas, I mapped out customer journeys to address diverse needs—from speedy mobile ordering to social reward systems. This led to features like in-app reservations, real-time delivery tracking, and interactive challenges that cater to both casual visitors and loyal customers.</p>
+            <h3 data-translate="brand_strategy_title">02. User Experience</h3>
+            <p data-translate="brand_strategy_text">With the help of detailed user personas, I mapped out customer journeys to address diverse needs—from speedy mobile ordering to social reward systems. This led to features like in-app reservations, real-time delivery tracking, and interactive challenges that cater to both casual visitors and loyal customers.</p>
           </div>
           <div class="process-item">
-            <h3>03. Interface Design</h3>
-            <p>Inspired by Mexican culture, I developed a bold and colorful UI system that balanced energy and clarity. The palette blends warm tones like coral and mustard with vibrant accents like lime green and soft pinks, creating a lively, modern feel. Icons and layouts were kept clean and intuitive to ensure a smooth navigation flow.</p>
+            <h3 data-translate="visual_identity_title">03. Interface Design</h3>
+            <p data-translate="visual_identity_text">Inspired by Mexican culture, I developed a bold and colorful UI system that balanced energy and clarity. The palette blends warm tones like coral and mustard with vibrant accents like lime green and soft pinks, creating a lively, modern feel. Icons and layouts were kept clean and intuitive to ensure a smooth navigation flow.</p>
           </div>
           <div class="process-item">
-            <h3>04. Prototype</h3>
-            <p>Low- and high-fidelity prototypes were built and tested to fine-tune usability. I focused on optimizing flows for actions like Pay&Go, delivery, and reservations—making sure each felt fast and effortless.</p>
+            <h3 data-translate="packaging_design_title">04. Prototype</h3>
+            <p data-translate="packaging_design_text">Low- and high-fidelity prototypes were built and tested to fine-tune usability. I focused on optimizing flows for actions like Pay&Go, delivery, and reservations—making sure each felt fast and effortless.</p>
           </div>
         </div>
       </div>
@@ -155,7 +160,7 @@
         <img src="La Llorona/Frame 25.png" alt="La Llorona Full App View" class="gallery-image">
       </div>
       <div class="gallery-item full">
-        <h2 class="prototype-title">Figma Prototype</h2>
+        <h2 class="prototype-title" data-translate="figma_prototype">Figma Prototype</h2>
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; max-width: 100%; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);" height="450" src="https://embed.figma.com/proto/tpcFU4VKNJ8kmj7ECImQmF/Prototipo-La-llorona?page-id=375%3A4983&node-id=375-5294&p=f&viewport=245%2C329%2C0.08&scaling=scale-down&content-scaling=fixed&starting-point-node-id=600%3A7949&embed-host=share" allowfullscreen></iframe>
       </div>
     </section>
@@ -163,23 +168,26 @@
     <!-- Next Project -->
     <section class="next-project">
       <a href="velox.html" class="next-project-link">
-        <span class="next-label">Next Project</span>
+        <span class="next-label" data-translate="next_project">Next Project</span>
         <h3 class="next-title">Velox</h3>
       </a>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-      <h2 class="scale-in">LET'S<br>CONNECT</h2>
-      <div class="footer-wrapper">
+      <h2 class="scale-in" data-translate="lets_connect">LET'S<br>CONNECT</h2>
+      
+      <div class="footer-wrapper" style="opacity: 1;">
         <div class="contact-links">
-          <a href="mailto:laurafonortes@gmail.com" class="bold-link">EMAIL</a>
-          <a href="https://www.instagram.com/laurafonseca.design" target="_blank" class="bold-link">INSTAGRAM</a>
-          <a href="https://www.linkedin.com/in/laura-fonseca-ort%C3%A9s-6abb1227b" target="_blank" class="bold-link">LINKEDIN</a>
+          <a href="mailto:laurafonortes@gmail.com" class="bold-link" data-translate="email">EMAIL</a>
+          <a href="https://www.instagram.com/laurafonseca.design" target="_blank" class="bold-link" data-translate="instagram">INSTAGRAM</a>
+          <a href="https://www.linkedin.com/in/laura-fonseca-ort%C3%A9s-6abb1227b" target="_blank" class="bold-link" data-translate="linkedin">LINKEDIN</a>
         </div>
+        
         <div class="footer-info">
-          <p>BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED</p>
+          <p data-translate="by_laura">BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED</p>
         </div>
+        
         <div class="contact-symbol">
           <img src="image 1.png" alt="Contact symbol" class="contact-image">
         </div>
@@ -190,6 +198,18 @@
   <script>
     // Register GSAP plugins
     gsap.registerPlugin(ScrollTrigger);
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+    
+    document.addEventListener('mousemove', (e) => {
+      gsap.to(cursor, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 0.1,
+        ease: 'power1.out'
+      });
+    });
 
     // Mobile menu toggle
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
@@ -287,41 +307,171 @@
       initPageAnimations();
     });
 
-    // Custom cursor
-    const cursor = document.querySelector('.cursor');
-    if (window.innerWidth > 768 && cursor) {
-      document.addEventListener('mousemove', (e) => {
+    // Custom cursor interactions
+    const interactiveElements = document.querySelectorAll('a, button');
+    
+    interactiveElements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
         gsap.to(cursor, {
-          x: e.clientX,
-          y: e.clientY,
-          duration: 0.1,
-          ease: 'power1.out'
+          scale: 1.5,
+          opacity: 0.7,
+          duration: 0.3,
+          ease: 'power2.out'
         });
+      });
+      
+      element.addEventListener('mouseleave', () => {
+        gsap.to(cursor, {
+          scale: 1,
+          opacity: 1,
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      });
+    });
+
+    // TRANSLATION SYSTEM
+    const translations = {
+      en: {
+        // Header
+        portfolio: "Portfolio",
+        multimedia_design: "Multimedia & Graphic Design",
+        about: "ABOUT",
+        work: "WORK",
+        contact: "CONTACT",
+        
+        // Navigation and buttons
+        back: "Back to projects",
+        next_project: "Next Project",
+        
+        // Project info
+        project_overview: "Project Overview",
+        project_text_1: "This project consisted of designing the interface for a restaurant app called La Llorona. The objective was to build a high-fidelity prototype in Figma, applying graphic and interface design principles.",
+        project_text_2: "The app was built to be intuitive and engaging, offering everything from digital menus with vibrant imagery to an integrated loyalty system that rewards user interaction.",
+        
+        // Design process
+        design_process: "Design Process",
+        research_title: "01. Research",
+        research_text: "I started by identifying the main digital pain points in restaurant user experiences, such as fragmented services, outdated menus, and lack of engaging loyalty programs. Market data and competitor analysis revealed a growing demand for unified, intuitive platforms. These insights shaped the foundation for the app's core features.",
+        brand_strategy_title: "02. User Experience",
+        brand_strategy_text: "With the help of detailed user personas, I mapped out customer journeys to address diverse needs—from speedy mobile ordering to social reward systems. This led to features like in-app reservations, real-time delivery tracking, and interactive challenges that cater to both casual visitors and loyal customers.",
+        visual_identity_title: "03. Interface Design",
+        visual_identity_text: "Inspired by Mexican culture, I developed a bold and colorful UI system that balanced energy and clarity. The palette blends warm tones like coral and mustard with vibrant accents like lime green and soft pinks, creating a lively, modern feel. Icons and layouts were kept clean and intuitive to ensure a smooth navigation flow.",
+        packaging_design_title: "04. Prototype",
+        packaging_design_text: "Low- and high-fidelity prototypes were built and tested to fine-tune usability. I focused on optimizing flows for actions like Pay&Go, delivery, and reservations—making sure each felt fast and effortless.",
+        
+        // Other elements
+        figma_prototype: "Figma Prototype",
+
+        // Contact section
+        lets_connect: "LET'S<br>CONNECT",
+        email: "EMAIL",
+        instagram: "INSTAGRAM",
+        linkedin: "LINKEDIN",
+        by_laura: "BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED"
+      },
+      es: {
+        // Header
+        portfolio: "Portafolio",
+        multimedia_design: "Diseño Multimedia y Gráfico",
+        about: "ACERCA",
+        work: "TRABAJO",
+        contact: "CONTACTO",
+        
+        // Navigation and buttons
+        back: "Volver a proyectos",
+        next_project: "Siguiente Proyecto",
+        
+        // Project info
+        project_overview: "Resumen del Proyecto",
+        project_text_1: "Este proyecto consistió en diseñar la interfaz de una aplicación de restaurante llamada La Llorona. El objetivo era construir un prototipo de alta fidelidad en Figma, aplicando principios de diseño gráfico e interfaz.",
+        project_text_2: "La aplicación fue construida para ser intuitiva y atractiva, ofreciendo desde menús digitales con imágenes vibrantes hasta un sistema de fidelización integrado que recompensa la interacción del usuario.",
+        
+        // Design process
+        design_process: "Proceso de Diseño",
+        research_title: "01. Investigación",
+        research_text: "Comencé identificando los principales problemas digitales en las experiencias de usuario de restaurantes, como servicios fragmentados, menús desactualizados y falta de programas de fidelización atractivos. Los datos del mercado y el análisis de la competencia revelaron una demanda creciente de plataformas unificadas e intuitivas. Estos conocimientos dieron forma a la base de las características principales de la aplicación.",
+        brand_strategy_title: "02. Experiencia de Usuario",
+        brand_strategy_text: "Con la ayuda de detallados perfiles de usuario, tracé los recorridos del cliente para abordar diversas necesidades, desde pedidos móviles rápidos hasta sistemas de recompensas sociales. Esto llevó a características como reservas en la aplicación, seguimiento de entrega en tiempo real y desafíos interactivos que atienden tanto a visitantes casuales como a clientes leales.",
+        visual_identity_title: "03. Diseño de Interfaz",
+        visual_identity_text: "Inspirado en la cultura mexicana, desarrollé un sistema de UI audaz y colorido que equilibraba energía y claridad. La paleta combina tonos cálidos como coral y mostaza con acentos vibrantes como verde lima y rosas suaves, creando una sensación viva y moderna. Los iconos y diseños se mantuvieron limpios e intuitivos para asegurar un flujo de navegación suave.",
+        packaging_design_title: "04. Prototipo",
+        packaging_design_text: "Se construyeron y probaron prototipos de baja y alta fidelidad para afinar la usabilidad. Me enfoqué en optimizar los flujos para acciones como Pay&Go, entrega y reservas, asegurándome de que cada una se sintiera rápida y sin esfuerzo.",
+        
+        // Other elements
+        figma_prototype: "Prototipo de Figma",
+
+        // Contact section
+        lets_connect: "CONECTA<br>CONMIGO",
+        email: "CORREO",
+        instagram: "INSTAGRAM",
+        linkedin: "LINKEDIN",
+        by_laura: "LAURA FONSECA<br>2025<br>TODOS LOS DERECHOS RESERVADOS"
+      }
+    };
+
+    // VARIABLE PARA IDIOMA ACTUAL
+    let currentLanguage = 'en'; // Idioma por defecto
+
+    // FUNCIÓN PARA CAMBIAR IDIOMA
+    function changeLanguage(lang) {
+      currentLanguage = lang;
+      
+      // Actualizar clases activas de los botones de idioma
+      document.querySelectorAll('.lang-option').forEach(option => {
+        option.classList.remove('active');
+      });
+      document.getElementById(`lang-${lang}`).classList.add('active');
+      
+      // Traducir todos los elementos
+      translatePage();
+      
+      // Guardar preferencia en localStorage (opcional)
+      localStorage.setItem('preferredLanguage', lang);
+    }
+
+    // FUNCIÓN PARA TRADUCIR LA PÁGINA
+    function translatePage() {
+      const elements = document.querySelectorAll('[data-translate]');
+      
+      elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[currentLanguage] && translations[currentLanguage][key]) {
+          if (element.innerHTML.includes('<br>')) {
+            element.innerHTML = translations[currentLanguage][key];
+          } else {
+            element.textContent = translations[currentLanguage][key];
+          }
+        }
       });
     }
 
-    // Custom cursor interactions
-    if (window.innerWidth > 768 && cursor) {
-      const interactiveElements = document.querySelectorAll('a, button');
-      interactiveElements.forEach(element => {
-        element.addEventListener('mouseenter', () => {
-          gsap.to(cursor, {
-            scale: 1.5,
-            opacity: 0.7,
-            duration: 0.3,
-            ease: 'power2.out'
-          });
-        });
-        element.addEventListener('mouseleave', () => {
-          gsap.to(cursor, {
-            scale: 1,
-            opacity: 1,
-            duration: 0.3,
-            ease: 'power2.out'
-          });
-        });
-      });
+    // FUNCIÓN PARA DETECTAR IDIOMA DEL NAVEGADOR (opcional)
+    function detectBrowserLanguage() {
+      const browserLang = navigator.language || navigator.userLanguage;
+      if (browserLang.startsWith('es')) {
+        return 'es';
+      }
+      return 'en';
     }
+
+    // INICIALIZACIÓN
+    document.addEventListener('DOMContentLoaded', function() {
+      // Recuperar idioma guardado o detectar idioma del navegador
+      const savedLanguage = localStorage.getItem('preferredLanguage');
+      if (savedLanguage && translations[savedLanguage]) {
+        currentLanguage = savedLanguage;
+      } else {
+        currentLanguage = detectBrowserLanguage();
+      }
+      
+      // Configurar event listeners para los botones de idioma
+      document.getElementById('lang-es').addEventListener('click', () => changeLanguage('es'));
+      document.getElementById('lang-en').addEventListener('click', () => changeLanguage('en'));
+      
+      // Aplicar idioma inicial
+      changeLanguage(currentLanguage);
+    });
   </script>
 </body>
 </html>

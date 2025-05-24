@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,22 +21,25 @@
   <header class="main-header">
     <div class="header-content">
       <div class="subtitle">
-        <span>Portfolio</span>
+        <span data-translate="portfolio">Portfolio</span>
         <span class="separator">—</span>
-        <span class="secondary-title">Multimedia & Graphic Design</span>
+        <span class="secondary-title" data-translate="multimedia_design">Multimedia & Graphic Design</span>
       </div>
       <nav>
         <ul>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#work">WORK</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#about" data-translate="about">ABOUT</a></li>
+          <li><a href="#work" data-translate="work">WORK</a></li>
+          <li><a href="#contact" data-translate="contact">CONTACT</a></li>
+          <li class="language-selector">
+            <span id="lang-es" class="lang-option active">ES</span>
+            <span class="lang-separator">/</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="mobile-nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
+
     </div>
   </header>
   <main>
@@ -52,8 +56,8 @@
         <img src="imagen-perfil.jpg" alt="Foto de Laura Fonseca" />
       </div>
       <div class="about-text">
-        <p>Hi, I'm Laura Fonseca!</p>
-        <p>I'm a Multimedia & Graphic Design student with a passion for creating meaningful visual experiences. My interests lie in Branding and UX/UI design, where I love blending creativity with strategy to craft designs that are both beautiful and functional.</p>
+        <p data-translate="intro_hi">Hi, I'm Laura Fonseca!</p>
+        <p data-translate="intro_description">I'm a Multimedia & Graphic Design student with a passion for creating meaningful visual experiences. My interests lie in Branding and UX/UI design, where I love blending creativity with strategy to craft designs that are both beautiful and functional.</p>
       </div>
     </section>
     <!-- Bloque informativo -->
@@ -61,25 +65,25 @@
       <div class="info-row">
         <div class="info-col-left">
           <div class="info-item">
-            <h3>Education</h3>
+            <h3 data-translate="education">Education</h3>
             <ul>
-              <li><b>UDIT</b><br>2023-2027<br>Bachelor in Multimedia &amp; Graphic Design</li>
-              <li><b>Trinity College SS Reyes</b><br>2011-2023<br>Technical Baccalaureate</li>
+              <li><b>UDIT</b><br>2023-2027<br><span data-translate="bachelor_degree">Bachelor in Multimedia &amp; Graphic Design</span></li>
+              <li><b>Trinity College SS Reyes</b><br>2011-2023<br><span data-translate="technical_baccalaureate">Technical Baccalaureate</span></li>
             </ul>
           </div>
           
           <div class="info-item">
-            <h3>Languages</h3>
+            <h3 data-translate="languages">Languages</h3>
             <ul>
-              <li><b>Spanish</b> (Nativo)</li>
-              <li><b>English</b> (C2 - Proficiency Cambridge Certificate)</li>
+              <li><b data-translate="spanish_native">Spanish (Native)</b></li>
+              <li><b data-translate="english_c2">English (C2 - Proficiency Cambridge Certificate)</b></li>
             </ul>
           </div>
         </div>
         
         <div class="info-col-right">
           <div class="info-item">
-            <h3>Skills</h3>
+            <h3 data-translate="skills">Skills</h3>
             <div class="skill-grid">
                 <div class="skill-category">Figma</div>
                 <div class="skill-dots">
@@ -138,29 +142,29 @@
             
             <!-- Soft skills in a single column -->
             <div class="soft-skills-column">
-                <div class="skill-category">Creativity</div>
-                <div class="skill-category">Communication</div>
-                <div class="skill-category">Problem-Solving</div>
-                <div class="skill-category">Adaptability</div>
-                <div class="skill-category">Time Management</div>
-                <div class="skill-category">Collaboration</div>
+                <div class="skill-category" data-translate="creativity">Creativity</div>
+                <div class="skill-category" data-translate="communication">Communication</div>
+                <div class="skill-category" data-translate="problem_solving">Problem-Solving</div>
+                <div class="skill-category" data-translate="adaptability">Adaptability</div>
+                <div class="skill-category" data-translate="time_management">Time Management</div>
+                <div class="skill-category" data-translate="collaboration">Collaboration</div>
             </div>
           </div>
           
           <div class="info-item">
-            <h3>Experience</h3>
+            <h3 data-translate="experience">Experience</h3>
             <ul>
-              <li><b>Basketball Coach</b><br>Trinity College SS Reyes 3<br>(October 2024 – Present)</li>
-              <li><b>English teacher</b><br>For children aged 6 to 12<br>(November 2023 – Present)</li>
-              <li><b>Waitress</b><br>Fridays Diversia<br>(September – November 2023)</li>
+              <li><b data-translate="basketball_coach">Basketball Coach</b><br>Trinity College SS Reyes<br>(October 2024 – Present)</li>
+              <li><b data-translate="english_teacher">English teacher</b><br><span data-translate="english_teacher_desc">For children aged 6 to 12</span><br>(November 2023 – Present)</li>
+              <li><b data-translate="waitress">Waitress</b><br>Fridays Diversia<br>(September – November 2023)</li>
             </ul>
           </div>
           
           <div class="info-item">
-            <h3>Others</h3>
+            <h3 data-translate="others">Others</h3>
             <ul>
-              <li><b>Language immersion</b><br>Bury St. Edmunds: Culford School. January 2017.</li>
-              <li><b>Academic debate</b><br>TIDE 2022</li>
+              <li><b data-translate="language_immersion">Language immersion</b><br><span data-translate="language_immersion_desc">Bury St. Edmunds: Culford School. January 2017.</span></li>
+              <li><b data-translate="academic_debate">Academic debate</b><br>TIDE 2022</li>
               <li><b>Animacamp</b><br>ESNE June 2022</li>
               <li><b>Technovation girls</b><br>January-June 2021</li>
             </ul>
@@ -170,11 +174,11 @@
     </section>
     <!-- Work Section -->
     <section class="work" id="work">
-      <h2 class="scale-in">WORK</h2>
+      <h2 class="scale-in" data-translate="work">WORK</h2>
       <div class="work-filters slide-up">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="Branding">Branding</button>
-        <button class="filter-btn" data-filter="Editorial">Editorial</button>
+        <button class="filter-btn active" data-filter="all" data-translate="all">All</button>
+        <button class="filter-btn" data-filter="Branding" data-translate="branding">Branding</button>
+        <button class="filter-btn" data-filter="Editorial" data-translate="editorial">Editorial</button>
         <button class="filter-btn" data-filter="UIUX">UI/UX</button>
       </div>
       <div class="projects-grid">
@@ -185,14 +189,14 @@
               <img src="Applaws/85x55_Business_Card_Mockup.png" alt="Applaws project image">
             </a>
             <div class="project-details">
-              <a href="applaws.html" class="view-btn">View</a>
+              <a href="applaws.html" class="view-btn" data-translate="view">View</a>
             </div>
           </div>
           <div class="project-info">
             <div class="frame-7">
               <h3>Applaws</h3>
               <div class="div-wrapper">
-                <span class="project-cat">Branding</span>
+                <span class="project-cat" data-translate="branding">Branding</span>
               </div>
             </div>
             <span class="project-year">2025</span>
@@ -205,7 +209,7 @@
               <img src="La Llorona/mockup1 1.png" alt="La Llorona project image">
             </a>
             <div class="project-details">
-              <a href="lallorona.html" class="view-btn">View</a>
+              <a href="lallorona.html" class="view-btn" data-translate="view">View</a>
             </div>
           </div>
           <div class="project-info">
@@ -225,7 +229,7 @@
                 <img src="Velox/mockupvelox.png" alt="Velox project image">
               </a>
               <div class="project-details">
-                <a href="velox.html" class="view-btn">View</a>
+                <a href="velox.html" class="view-btn" data-translate="view">View</a>
               </div>
             </div>
             <div class="project-info">
@@ -245,14 +249,14 @@
               <img src="Nogue/Mockup.jpg" alt="Nogue project image">
             </a>
             <div class="project-details">
-              <a href="nogue.html" class="view-btn">View</a>
+              <a href="nogue.html" class="view-btn" data-translate="view">View</a>
             </div>
           </div>
           <div class="project-info">
             <div class="frame-7">
               <h3>Nogue</h3>
               <div class="div-wrapper">
-                <span class="project-cat">Editorial</span>
+                <span class="project-cat" data-translate="editorial">Editorial</span>
               </div>
             </div>
             <span class="project-year">2025</span>
@@ -262,17 +266,17 @@
     </section>
     <!-- Contact Section -->
     <section class="contact" id="contact">
-      <h2 class="scale-in">LET'S<br>CONNECT</h2>
+      <h2 class="scale-in" data-translate="lets_connect">LET'S<br>CONNECT</h2>
       
       <div class="footer-wrapper" style="opacity: 1;">
         <div class="contact-links">
-          <a href="mailto:laurafonortes@gmail.com" class="bold-link">EMAIL</a>
-          <a href="https://www.instagram.com/laurafonseca.design" target="_blank" class="bold-link">INSTAGRAM</a>
-          <a href="https://www.linkedin.com/in/laura-fonseca-ort%C3%A9s-6abb1227b" target="_blank" class="bold-link">LINKEDIN</a>
+          <a href="mailto:laurafonortes@gmail.com" class="bold-link" data-translate="email">EMAIL</a>
+          <a href="https://www.instagram.com/laurafonseca.design" target="_blank" class="bold-link" data-translate="instagram">INSTAGRAM</a>
+          <a href="https://www.linkedin.com/in/laura-fonseca-ort%C3%A9s-6abb1227b" target="_blank" class="bold-link" data-translate="linkedin">LINKEDIN</a>
         </div>
         
         <div class="footer-info">
-          <p>BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED</p>
+          <p data-translate="by_laura">BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED</p>
         </div>
         
         <div class="contact-symbol">
@@ -676,6 +680,169 @@
         });
       }
     }
+    // 1. OBJETO CON TODAS LAS TRADUCCIONES
+const translations = {
+  en: {
+    // Header
+    portfolio: "Portfolio",
+    multimedia_design: "Multimedia & Graphic Design",
+    about: "ABOUT",
+    work: "WORK",
+    contact: "CONTACT",
+    
+    // About section
+    intro_hi: "Hi, I'm Laura Fonseca!",
+    intro_description: "I'm a Multimedia & Graphic Design student with a passion for creating meaningful visual experiences. My interests lie in Branding and UX/UI design, where I love blending creativity with strategy to craft designs that are both beautiful and functional.",
+    
+    // Info block
+    education: "Education",
+    bachelor_degree: "Bachelor in Multimedia & Graphic Design",
+    technical_baccalaureate: "Technical Baccalaureate",
+    languages: "Languages",
+    spanish_native: "Spanish (Native)",
+    english_c2: "English (C2 - Proficiency Cambridge Certificate)",
+    skills: "Skills",
+    creativity: "Creativity",
+    communication: "Communication",
+    problem_solving: "Problem-Solving",
+    adaptability: "Adaptability",
+    time_management: "Time Management",
+    collaboration: "Collaboration",
+    experience: "Experience",
+    basketball_coach: "Basketball Coach",
+    english_teacher: "English teacher",
+    english_teacher_desc: "For children aged 6 to 12",
+    waitress: "Waitress",
+    others: "Others",
+    language_immersion: "Language immersion",
+    language_immersion_desc: "Bury St. Edmunds: Culford School. January 2017.",
+    academic_debate: "Academic debate",
+    
+    // Work section
+    all: "All",
+    branding: "Branding",
+    editorial: "Editorial",
+    view: "View",
+    
+    // Contact section
+    lets_connect: "LET'S<br>CONNECT",
+    email: "EMAIL",
+    instagram: "INSTAGRAM",
+    linkedin: "LINKEDIN",
+    by_laura: "BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED"
+  },
+  es: {
+    // Header
+    portfolio: "Portafolio",
+    multimedia_design: "Diseño Multimedia y Gráfico",
+    about: "ACERCA",
+    work: "TRABAJO",
+    contact: "CONTACTO",
+    
+    // About section
+    intro_hi: "¡Hola, soy Laura Fonseca!",
+    intro_description: "Soy estudiante de Diseño Multimedia y Gráfico con un fuerte interés en el Branding y el diseño UX/UI, las áreas que más me apasionan. Disfruto explorar cómo la creatividad puede unirse a la estrategia para crear experiencias visuales que no solo sean atractivas, sino también funcionales y significativas.",
+    
+    // Info block
+    education: "Educación",
+    bachelor_degree: "Licenciatura en Diseño Multimedia y Gráfico",
+    technical_baccalaureate: "Bachillerato Técnico",
+    languages: "Idiomas",
+    spanish_native: "Español (Nativo)",
+    english_c2: "Inglés (C2 - Certificado Cambridge Proficiency)",
+    skills: "Habilidades",
+    creativity: "Creatividad",
+    communication: "Comunicación",
+    problem_solving: "Resolución de Problemas",
+    adaptability: "Adaptabilidad",
+    time_management: "Gestión del Tiempo",
+    collaboration: "Colaboración",
+    experience: "Experiencia",
+    basketball_coach: "Entrenadora de Baloncesto",
+    english_teacher: "Profesora de inglés",
+    english_teacher_desc: "Para niños de 6 a 12 años",
+    waitress: "Camarera",
+    others: "Otros",
+    language_immersion: "Inmersión lingüística",
+    language_immersion_desc: "Bury St. Edmunds: Culford School. Enero 2017.",
+    academic_debate: "Debate académico",
+    
+    // Work section
+    all: "Todo",
+    branding: "Branding",
+    editorial: "Editorial",
+    view: "Ver",
+    
+    // Contact section
+    lets_connect: "CONECTA<br>CONMIGO",
+    email: "CORREO",
+    instagram: "INSTAGRAM",
+    linkedin: "LINKEDIN",
+    by_laura: "LAURA FONSECA<br>2025<br>TODOS LOS DERECHOS RESERVADOS"
+  }
+};
+
+// 2. VARIABLE PARA IDIOMA ACTUAL
+let currentLanguage = 'en'; // Idioma por defecto
+
+// 3. FUNCIÓN PARA CAMBIAR IDIOMA
+function changeLanguage(lang) {
+  currentLanguage = lang;
+  
+  // Actualizar clases activas de los botones de idioma
+  document.querySelectorAll('.lang-option').forEach(option => {
+    option.classList.remove('active');
+  });
+  document.getElementById(`lang-${lang}`).classList.add('active');
+  
+  // Traducir todos los elementos
+  translatePage();
+  
+  // Guardar preferencia en localStorage (opcional)
+  localStorage.setItem('preferredLanguage', lang);
+}
+
+// 4. FUNCIÓN PARA TRADUCIR LA PÁGINA
+function translatePage() {
+  const elements = document.querySelectorAll('[data-translate]');
+  
+  elements.forEach(element => {
+    const key = element.getAttribute('data-translate');
+    if (translations[currentLanguage] && translations[currentLanguage][key]) {
+      if (element.innerHTML.includes('<br>')) {
+        element.innerHTML = translations[currentLanguage][key];
+      } else {
+        element.textContent = translations[currentLanguage][key];
+      }
+    }
+  });
+}
+
+// 5. INICIALIZACIÓN
+document.addEventListener('DOMContentLoaded', function() {
+  // Recuperar idioma guardado (opcional)
+  const savedLanguage = localStorage.getItem('preferredLanguage');
+  if (savedLanguage && translations[savedLanguage]) {
+    currentLanguage = savedLanguage;
+  }
+  
+  // Configurar event listeners para los botones de idioma
+  document.getElementById('lang-es').addEventListener('click', () => changeLanguage('es'));
+  document.getElementById('lang-en').addEventListener('click', () => changeLanguage('en'));
+  
+  // Aplicar idioma inicial
+  changeLanguage(currentLanguage);
+});
+
+// 6. FUNCIÓN PARA DETECTAR IDIOMA DEL NAVEGADOR (opcional)
+function detectBrowserLanguage() {
+  const browserLang = navigator.language || navigator.userLanguage;
+  if (browserLang.startsWith('es')) {
+    return 'es';
+  }
+  return 'en';
+}
+currentLanguage = detectBrowserLanguage();
   </script>
 </body>
 </html> 

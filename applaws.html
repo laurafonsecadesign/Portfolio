@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png" type="image/png">
   <title>Applaws - Laura Fonseca Portfolio</title>
   <!-- Google Fonts: Instrument Serif -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,29 +58,29 @@
     
   </style>
 </head>
-<body>
-  <!-- Custom cursor -->
+<body> 
   <div class="cursor"></div>
-  
   <header class="main-header">
     <div class="header-content">
       <div class="subtitle">
-        <span>Portfolio</span>
+        <span data-translate="portfolio">Portfolio</span>
         <span class="separator">—</span>
-        <span class="secondary-title">Multimedia & Graphic Design</span>
+        <span class="secondary-title" data-translate="multimedia_design">Multimedia & Graphic Design</span>
       </div>
       <nav>
         <ul>
-          <li><a href="index.html#about">ABOUT</a></li>
-          <li><a href="index.html#work">WORK</a></li>
-          <li><a href="index.html#contact">CONTACT</a></li>
+          <li><a href="#about" data-translate="about">ABOUT</a></li>
+          <li><a href="#work" data-translate="work">WORK</a></li>
+          <li><a href="#contact" data-translate="contact">CONTACT</a></li>
+          <li class="language-selector">
+            <span id="lang-es" class="lang-option active">ES</span>
+            <span class="lang-separator">/</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="mobile-nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
     </div>
   </header>
 
@@ -88,7 +89,7 @@
     <div class="back-button">
       <a href="index.html#work">
         <img src="arrow-back.svg" alt="Back to projects">
-        <span>Back to projects</span>
+        <span data-translate="back">Back to projects</span>
       </a>
     </div>
 
@@ -97,7 +98,7 @@
       <div class="project-hero-content">
         <h1 class="project-title">APPLAWS</h1>
         <div class="project-meta">
-          <span class="project-category">Brand Redesign</span>
+          <span class="project-category" data-translate="rediseño">Brand Redesign</span>
           <span class="project-year">2023</span>
         </div>
       </div>
@@ -107,9 +108,9 @@
     <section class="project-overview">
       <div class="project-container">
         <div class="project-description">
-          <h2>Project Overview</h2>
-          <p>For this project, I had the opportunity to refresh Applaws' visual identity, a premium pet food brand focused on providing high-quality, natural ingredients for cats and dogs. </p>
-          <p>The challenge was to design packaging and brand elements that would stand out in a competitive market while conveying the premium nature of the product.</p>
+          <h2 data-translate="project_overview">Project Overview</h2>
+          <p data-translate="project_text_1">For this project, I had the opportunity to refresh Applaws' visual identity, a premium pet food brand focused on providing high-quality, natural ingredients for cats and dogs.</p>
+          <p data-translate="project_text_2">The challenge was to design packaging and brand elements that would stand out in a competitive market while conveying the premium nature of the product.</p>
         </div>
       </div>
     </section>
@@ -137,24 +138,23 @@
     <!-- Project Process (Moved here) -->
     <section class="project-process">
       <div class="project-container">
-        <h2>Design Process</h2>
+        <h2 data-translate="design_process">Design Process</h2>
         <div class="process-grid">
           <div class="process-item">
-            <h3>01. Research</h3>
-            <p>I began with comprehensive market research, analyzing competing pet food brands and identifying opportunities for differentiation. This included studying consumer preferences and trends in the premium pet food segment.</p>
+            <h3 data-translate="research_title">01. Research</h3>
+            <p data-translate="research_text">I began with comprehensive market research, analyzing competing pet food brands and identifying opportunities for differentiation. This included studying consumer preferences and trends in the premium pet food segment.</p>
           </div>
           <div class="process-item">
-            <h3>02. Brand Strategy</h3>
-            <p>Drawing from the brand's commitment to natural, high-quality ingredients and its B Corporation values, I defined a strategy focused on authenticity, simplicity, and emotional connection. The positioning aimed to reflect Applaws' unique offering, through a warm and trustworthy brand voice.</p>
+            <h3 data-translate="brand_strategy_title">02. Brand Strategy</h3>
+            <p data-translate="brand_strategy_text">Drawing from the brand's commitment to natural, high-quality ingredients and its B Corporation values, I defined a strategy focused on authenticity, simplicity, and emotional connection. The positioning aimed to reflect Applaws' unique offering, through a warm and trustworthy brand voice.</p>
           </div>
           <div class="process-item">
-            <h3>03. Visual Identity</h3>
-            <p>I developed a custom logotype integrating the silhouettes of a cat and dog into the negative space of the letters, symbolizing inclusivity. The identity system was expanded with a soft, vibrant color palette, rounded typography, and expressive illustrations to evoke joy, care, and modernity, while maintaining clarity and legibility.
-            </p>
+            <h3 data-translate="visual_identity_title">03. Visual Identity</h3>
+            <p data-translate="visual_identity_text">I developed a custom logotype integrating the silhouettes of a cat and dog into the negative space of the letters, symbolizing inclusivity. The identity system was expanded with a soft, vibrant color palette, rounded typography, and expressive illustrations to evoke joy, care, and modernity, while maintaining clarity and legibility.</p>
           </div>
           <div class="process-item">
-            <h3>04. Packaging Design</h3>
-            <p>The packaging was designed to highlight the product's premium ingredients while ensuring strong shelf presence. I created a flexible system that accommodated different product lines while maintaining brand consistency.</p>
+            <h3 data-translate="packaging_design_title">04. Packaging Design</h3>
+            <p data-translate="packaging_design_text">The packaging was designed to highlight the product's premium ingredients while ensuring strong shelf presence. I created a flexible system that accommodated different product lines while maintaining brand consistency.</p>
           </div>
         </div>
       </div>
@@ -204,31 +204,31 @@
     <!-- Next Project -->
     <section class="next-project">
       <a href="lallorona.html" class="next-project-link">
-        <span class="next-label">Next Project</span>
+        <span class="next-label" data-translate="next_project">Next Project</span>
         <h3 class="next-title">La Llorona</h3>
       </a>
     </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2 class="scale-in">LET'S<br>CONNECT</h2>
-    
-    <div class="footer-wrapper" style="opacity: 1;">
-      <div class="contact-links">
-        <a href="mailto:laurafonortes@gmail.com" class="bold-link">EMAIL</a>
-        <a href="https://www.instagram.com/laurafonseca.design" target="_blank" class="bold-link">INSTAGRAM</a>
-        <a href="https://www.linkedin.com/in/laura-fonseca-ort%C3%A9s-6abb1227b" target="_blank" class="bold-link">LINKEDIN</a>
-      </div>
+    <section class="contact" id="contact">
+      <h2 class="scale-in" data-translate="lets_connect">LET'S<br>CONNECT</h2>
       
-      <div class="footer-info">
-        <p>BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED</p>
+      <div class="footer-wrapper" style="opacity: 1;">
+        <div class="contact-links">
+          <a href="mailto:laurafonortes@gmail.com" class="bold-link" data-translate="email">EMAIL</a>
+          <a href="https://www.instagram.com/laurafonseca.design" target="_blank" class="bold-link" data-translate="instagram">INSTAGRAM</a>
+          <a href="https://www.linkedin.com/in/laura-fonseca-ort%C3%A9s-6abb1227b" target="_blank" class="bold-link" data-translate="linkedin">LINKEDIN</a>
+        </div>
+        
+        <div class="footer-info">
+          <p data-translate="by_laura">BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED</p>
+        </div>
+        
+        <div class="contact-symbol">
+          <img src="image 1.png" alt="Contact symbol" class="contact-image">
+        </div>
       </div>
-      
-      <div class="contact-symbol">
-        <img src="image 1.png" alt="Contact symbol" class="contact-image">
-      </div>
-    </div>
-  </section>
+    </section>
 </main>
 
   <script>
@@ -364,6 +364,145 @@
           ease: 'power2.out'
         });
       });
+    });
+
+    // TRANSLATION SYSTEM
+    const translations = {
+      en: {
+        // Header
+        portfolio: "Portfolio",
+        multimedia_design: "Multimedia & Graphic Design",
+        about: "ABOUT",
+        work: "WORK",
+        contact: "CONTACT",
+        
+        // Navigation and buttons
+        back: "Back to projects",
+        next_project: "Next Project",
+        
+        // Project info
+        rediseño: "Brand Redesign",
+        project_overview: "Project Overview",
+        project_text_1: "For this project, I had the opportunity to refresh Applaws' visual identity, a premium pet food brand focused on providing high-quality, natural ingredients for cats and dogs.",
+        project_text_2: "The challenge was to design packaging and brand elements that would stand out in a competitive market while conveying the premium nature of the product.",
+        
+        // Design process
+        design_process: "Design Process",
+        research_title: "01. Research",
+        research_text: "I began with comprehensive market research, analyzing competing pet food brands and identifying opportunities for differentiation. This included studying consumer preferences and trends in the premium pet food segment.",
+        brand_strategy_title: "02. Brand Strategy",
+        brand_strategy_text: "Drawing from the brand's commitment to natural, high-quality ingredients and its B Corporation values, I defined a strategy focused on authenticity, simplicity, and emotional connection. The positioning aimed to reflect Applaws' unique offering, through a warm and trustworthy brand voice.",
+        visual_identity_title: "03. Visual Identity",
+        visual_identity_text: "I developed a custom logotype integrating the silhouettes of a cat and dog into the negative space of the letters, symbolizing inclusivity. The identity system was expanded with a soft, vibrant color palette, rounded typography, and expressive illustrations to evoke joy, care, and modernity, while maintaining clarity and legibility.",
+        packaging_design_title: "04. Packaging Design",
+        packaging_design_text: "The packaging was designed to highlight the product's premium ingredients while ensuring strong shelf presence. I created a flexible system that accommodated different product lines while maintaining brand consistency.",
+
+        // Contact section
+        lets_connect: "LET'S<br>CONNECT",
+        email: "EMAIL",
+        instagram: "INSTAGRAM",
+        linkedin: "LINKEDIN",
+        by_laura: "BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED"
+      },
+      es: {
+        // Header
+        portfolio: "Portafolio",
+        multimedia_design: "Diseño Multimedia y Gráfico",
+        about: "ACERCA",
+        work: "TRABAJO",
+        contact: "CONTACTO",
+        
+        // Navigation and buttons
+        back: "Volver a proyectos",
+        next_project: "Siguiente Proyecto",
+        
+        // Project info
+        rediseño: "Rediseño de Marca",
+        project_overview: "Resumen del Proyecto",
+        project_text_1: "Para este proyecto, tuve la oportunidad de renovar la identidad visual de Applaws, una marca de alimentos premium para mascotas enfocada en ofrecer ingredientes naturales y de alta calidad para gatos y perros.",
+        project_text_2: "El reto consistió en diseñar el packaging y los elementos de marca de manera que destacaran en un mercado competitivo, transmitiendo al mismo tiempo el carácter premium del producto.",
+        
+        // Design process
+        design_process: "Proceso de Diseño",
+        research_title: "01. Investigación",
+        research_text: "Comencé con una investigación integral del mercado, analizando marcas competidoras de alimentos para mascotas e identificando oportunidades de diferenciación. Esto incluyó estudiar las preferencias de los consumidores y las tendencias en el segmento de alimentos premium para mascotas.",
+        brand_strategy_title: "02. Estrategia de Marca",
+        brand_strategy_text: "Basándome en el compromiso de la marca con ingredientes naturales y de alta calidad y sus valores de Corporación B, definí una estrategia enfocada en autenticidad, simplicidad y conexión emocional. El posicionamiento buscaba reflejar la oferta única de Applaws, a través de una voz de marca cálida y confiable.",
+        visual_identity_title: "03. Identidad Visual",
+        visual_identity_text: "Desarrollé un logotipo personalizado que integra las siluetas de un gato y un perro en el espacio negativo de las letras, simbolizando inclusividad. El sistema de identidad se expandió con una paleta de colores suave y vibrante, tipografía redondeada e ilustraciones expresivas para evocar alegría, cuidado y modernidad, manteniendo claridad y legibilidad.",
+        packaging_design_title: "04. Diseño de Empaque",
+        packaging_design_text: "El packaging fue diseñado para destacar los ingredientes premium del producto mientras aseguraba una fuerte presencia en el estante. Creé un sistema flexible que acomodaba diferentes líneas de productos manteniendo la consistencia de marca.",
+
+        // Contact section
+        lets_connect: "CONECTA<br>CONMIGO",
+        email: "CORREO",
+        instagram: "INSTAGRAM",
+        linkedin: "LINKEDIN",
+        by_laura: "LAURA FONSECA<br>2025<br>TODOS LOS DERECHOS RESERVADOS"
+      }
+    };
+
+    // VARIABLE PARA IDIOMA ACTUAL
+    let currentLanguage = 'en'; // Idioma por defecto
+
+    // FUNCIÓN PARA CAMBIAR IDIOMA
+    function changeLanguage(lang) {
+      currentLanguage = lang;
+      
+      // Actualizar clases activas de los botones de idioma
+      document.querySelectorAll('.lang-option').forEach(option => {
+        option.classList.remove('active');
+      });
+      document.getElementById(`lang-${lang}`).classList.add('active');
+      
+      // Traducir todos los elementos
+      translatePage();
+      
+      // Guardar preferencia en localStorage (opcional)
+      localStorage.setItem('preferredLanguage', lang);
+    }
+
+    // FUNCIÓN PARA TRADUCIR LA PÁGINA
+    function translatePage() {
+      const elements = document.querySelectorAll('[data-translate]');
+      
+      elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[currentLanguage] && translations[currentLanguage][key]) {
+          if (element.innerHTML.includes('<br>')) {
+            element.innerHTML = translations[currentLanguage][key];
+          } else {
+            element.textContent = translations[currentLanguage][key];
+          }
+        }
+      });
+    }
+
+    // FUNCIÓN PARA DETECTAR IDIOMA DEL NAVEGADOR (opcional)
+    function detectBrowserLanguage() {
+      const browserLang = navigator.language || navigator.userLanguage;
+      if (browserLang.startsWith('es')) {
+        return 'es';
+      }
+      return 'en';
+    }
+
+    // INICIALIZACIÓN
+    document.addEventListener('DOMContentLoaded', function() {
+      // Recuperar idioma guardado o detectar idioma del navegador
+      const savedLanguage = localStorage.getItem('preferredLanguage');
+      if (savedLanguage && translations[savedLanguage]) {
+        currentLanguage = savedLanguage;
+      } else {
+        currentLanguage = detectBrowserLanguage();
+      }
+      
+      // Configurar event listeners para los botones de idioma
+      document.getElementById('lang-es').addEventListener('click', () => changeLanguage('es'));
+      document.getElementById('lang-en').addEventListener('click', () => changeLanguage('en'));
+      
+      // Aplicar idioma inicial
+      changeLanguage(currentLanguage);
     });
   </script>
 </body>

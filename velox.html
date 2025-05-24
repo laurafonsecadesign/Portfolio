@@ -93,15 +93,20 @@
   <header class="main-header">
     <div class="header-content">
       <div class="subtitle">
-        <span>Portfolio</span>
+        <span data-translate="portfolio">Portfolio</span>
         <span class="separator">—</span>
-        <span class="secondary-title">Multimedia & Graphic Design</span>
+        <span class="secondary-title" data-translate="multimedia_design">Multimedia & Graphic Design</span>
       </div>
       <nav>
         <ul>
-          <li><a href="index.html#about">ABOUT</a></li>
-          <li><a href="index.html#work">WORK</a></li>
-          <li><a href="index.html#contact">CONTACT</a></li>
+          <li><a href="index.html#about" data-translate="about">ABOUT</a></li>
+          <li><a href="index.html#work" data-translate="work">WORK</a></li>
+          <li><a href="index.html#contact" data-translate="contact">CONTACT</a></li>
+          <li class="language-selector">
+            <span id="lang-es" class="lang-option active">ES</span>
+            <span class="lang-separator">/</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </li>
         </ul>
       </nav>
     </div>
@@ -117,7 +122,7 @@
     <div class="back-button">
       <a href="index.html#work">
         <img src="arrow-back.svg" alt="Back to projects">
-        <span>Back to projects</span>
+        <span data-translate="back">Back to projects</span>
       </a>
     </div>
 
@@ -127,6 +132,20 @@
         <h1 class="project-title">VELOX</h1>
         <div class="project-meta">
           <span class="project-category">UI/UX</span>
+          <span class="project-year">2024</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+      <div class="project-container">
+        <div class="project-description">
+          <h2 data-translate="project_overview">Project Overview</h2>
+          <p data-translate="project_text_1">Velox is a comprehensive e-commerce platform designed for cycling enthusiasts and urban commuters. The project focused on creating an intuitive digital experience that combines product discovery, customization, and seamless purchasing in one unified platform.</p>
+          <p data-translate="project_text_2">The design emphasizes modern aesthetics with high-contrast neon elements, creating a tech-forward brand identity that appeals to both casual riders and professional cyclists. The platform features advanced filtering, product customization tools, and an integrated service booking system.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Project Gallery (Part 1) -->
@@ -145,26 +164,26 @@
       </div>
     </section>
 
-    <!-- Project Process (Moved here) -->
+    <!-- Project Process -->
     <section class="project-process">
       <div class="project-container">
-        <h2>Design Process</h2>
+        <h2 data-translate="design_process">Design Process</h2>
         <div class="process-grid">
           <div class="process-item">
-            <h3>01. Research</h3>
-            <p>The project began with in-depth market analysis and user profiling to understand trends in cycling culture and consumer behavior. Insights from industry reports and competitor studies highlighted a growing demand for customization, sustainable transport, and user-friendly digital experiences—particularly among urban riders and tech-savvy athletes.</p>
+            <h3 data-translate="research_title">01. Research</h3>
+            <p data-translate="research_text">The project began with in-depth market analysis and user profiling to understand trends in cycling culture and consumer behavior. Insights from industry reports and competitor studies highlighted a growing demand for customization, sustainable transport, and user-friendly digital experiences—particularly among urban riders and tech-savvy athletes.</p>
           </div>
           <div class="process-item">
-            <h3>02. Information Architecture</h3>
-            <p>Using the insights gathered, I designed a clear and scalable information architecture that grouped products and services into intuitive categories. This structure supported easy navigation across a diverse catalog—bikes, accessories, apparel, and maintenance services—ensuring users could find what they needed quickly and confidently.</p>
+            <h3 data-translate="brand_strategy_title">02. Information Architecture</h3>
+            <p data-translate="brand_strategy_text">Using the insights gathered, I designed a clear and scalable information architecture that grouped products and services into intuitive categories. This structure supported easy navigation across a diverse catalog—bikes, accessories, apparel, and maintenance services—ensuring users could find what they needed quickly and confidently.</p>
           </div>
           <div class="process-item">
-            <h3>03. UI Design</h3>
-            <p>The visual design combined a high-contrast neon palette with dark accents, evoking a modern, tech-forward brand identity. I developed a modular layout system and selected bold typography and dynamic imagery to create a professional yet energetic interface. Custom icons and interactive product tags further enhanced usability and brand consistency.</p>
+            <h3 data-translate="visual_identity_title">03. UI Design</h3>
+            <p data-translate="visual_identity_text">The visual design combined a high-contrast neon palette with dark accents, evoking a modern, tech-forward brand identity. I developed a modular layout system and selected bold typography and dynamic imagery to create a professional yet energetic interface. Custom icons and interactive product tags further enhanced usability and brand consistency.</p>
           </div>
           <div class="process-item">
-            <h3>04. Prototyping & Testing</h3>
-            <p>High-fidelity prototypes were created and tested to validate design assumptions and refine key user flows, from browsing products to completing purchases.</p>
+            <h3 data-translate="packaging_design_title">04. Prototyping & Testing</h3>
+            <p data-translate="packaging_design_text">High-fidelity prototypes were created and tested to validate design assumptions and refine key user flows, from browsing products to completing purchases. User feedback sessions helped optimize the checkout process, product filtering system, and overall navigation experience.</p>
           </div>
         </div>
       </div>
@@ -178,7 +197,7 @@
       
       <!-- Figma Prototype Embed -->
       <div class="figma-embed">
-        <h2 class="prototype-title">Figma Prototype</h2>
+        <h2 class="prototype-title" data-translate="figma_prototype">Figma Prototype</h2>
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/RBUXRnXuIMh6hcRdBTjjCg/Prototipo-Velox?page-id=3%3A9&node-id=3-10&p=f&viewport=257%2C309%2C0.03&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=166%3A380&embed-host=share" allowfullscreen></iframe>
       </div>
     </section>
@@ -186,24 +205,24 @@
     <!-- Next Project -->
     <section class="next-project">
       <a href="nogue.html" class="next-project-link">
-        <span class="next-label">Next Project</span>
+        <span class="next-label" data-translate="next_project">Next Project</span>
         <h3 class="next-title">Nogue</h3>
       </a>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-      <h2 class="scale-in">LET'S<br>CONNECT</h2>
+      <h2 class="scale-in" data-translate="lets_connect">LET'S<br>CONNECT</h2>
       
       <div class="footer-wrapper" style="opacity: 1;">
         <div class="contact-links">
-          <a href="mailto:laurafonortes@gmail.com" class="bold-link">EMAIL</a>
-          <a href="https://www.instagram.com/laurafonseca.design" target="_blank" class="bold-link">INSTAGRAM</a>
-          <a href="https://www.linkedin.com/in/laura-fonseca-ort%C3%A9s-6abb1227b" target="_blank" class="bold-link">LINKEDIN</a>
+          <a href="mailto:laurafonortes@gmail.com" class="bold-link" data-translate="email">EMAIL</a>
+          <a href="https://www.instagram.com/laurafonseca.design" target="_blank" class="bold-link" data-translate="instagram">INSTAGRAM</a>
+          <a href="https://www.linkedin.com/in/laura-fonseca-ort%C3%A9s-6abb1227b" target="_blank" class="bold-link" data-translate="linkedin">LINKEDIN</a>
         </div>
         
         <div class="footer-info">
-          <p>BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED</p>
+          <p data-translate="by_laura">BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED</p>
         </div>
         
         <div class="contact-symbol">
@@ -216,6 +235,29 @@
   <script>
     // Register GSAP plugins
     gsap.registerPlugin(ScrollTrigger);
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+    
+    document.addEventListener('mousemove', (e) => {
+      gsap.to(cursor, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 0.1,
+        ease: 'power1.out'
+      });
+    });
+
+    // Mobile menu toggle
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const nav = document.querySelector('nav');
+    
+    if (mobileNavToggle) {
+      mobileNavToggle.addEventListener('click', () => {
+        mobileNavToggle.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    }
 
     // Page animations
     function initPageAnimations() {
@@ -302,41 +344,171 @@
       initPageAnimations();
     });
 
-    // Custom cursor
-    const cursor = document.querySelector('.cursor');
-    if (window.innerWidth > 768 && cursor) {
-      document.addEventListener('mousemove', (e) => {
+    // Custom cursor interactions
+    const interactiveElements = document.querySelectorAll('a, button');
+    
+    interactiveElements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
         gsap.to(cursor, {
-          x: e.clientX,
-          y: e.clientY,
-          duration: 0.1,
-          ease: 'power1.out'
+          scale: 1.5,
+          opacity: 0.7,
+          duration: 0.3,
+          ease: 'power2.out'
         });
+      });
+      
+      element.addEventListener('mouseleave', () => {
+        gsap.to(cursor, {
+          scale: 1,
+          opacity: 1,
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      });
+    });
+
+    // TRANSLATION SYSTEM
+    const translations = {
+      en: {
+        // Header
+        portfolio: "Portfolio",
+        multimedia_design: "Multimedia & Graphic Design",
+        about: "ABOUT",
+        work: "WORK",
+        contact: "CONTACT",
+        
+        // Navigation and buttons
+        back: "Back to projects",
+        next_project: "Next Project",
+        
+        // Project info
+        project_overview: "Project Overview",
+        project_text_1: "Velox is a comprehensive e-commerce platform designed for cycling enthusiasts and urban commuters. The project focused on creating an intuitive digital experience that combines product discovery, customization, and seamless purchasing in one unified platform.",
+        project_text_2: "The design emphasizes modern aesthetics with high-contrast neon elements, creating a tech-forward brand identity that appeals to both casual riders and professional cyclists. The platform features advanced filtering, product customization tools, and an integrated service booking system.",
+        
+        // Design process
+        design_process: "Design Process",
+        research_title: "01. Research",
+        research_text: "The project began with in-depth market analysis and user profiling to understand trends in cycling culture and consumer behavior. Insights from industry reports and competitor studies highlighted a growing demand for customization, sustainable transport, and user-friendly digital experiences—particularly among urban riders and tech-savvy athletes.",
+        brand_strategy_title: "02. Information Architecture",
+        brand_strategy_text: "Using the insights gathered, I designed a clear and scalable information architecture that grouped products and services into intuitive categories. This structure supported easy navigation across a diverse catalog—bikes, accessories, apparel, and maintenance services—ensuring users could find what they needed quickly and confidently.",
+        visual_identity_title: "03. UI Design",
+        visual_identity_text: "The visual design combined a high-contrast neon palette with dark accents, evoking a modern, tech-forward brand identity. I developed a modular layout system and selected bold typography and dynamic imagery to create a professional yet energetic interface. Custom icons and interactive product tags further enhanced usability and brand consistency.",
+        packaging_design_title: "04. Prototyping & Testing",
+        packaging_design_text: "High-fidelity prototypes were created and tested to validate design assumptions and refine key user flows, from browsing products to completing purchases. User feedback sessions helped optimize the checkout process, product filtering system, and overall navigation experience.",
+
+        // Figma
+        figma_prototype: "Figma Prototype",
+
+        // Contact section
+        lets_connect: "LET'S<br>CONNECT",
+        email: "EMAIL",
+        instagram: "INSTAGRAM",
+        linkedin: "LINKEDIN",
+        by_laura: "BY LAURA FONSECA<br>2025<br>ALL RIGHTS RESERVED"
+      },
+      es: {
+        // Header
+        portfolio: "Portafolio",
+        multimedia_design: "Diseño Multimedia y Gráfico",
+        about: "ACERCA",
+        work: "TRABAJO",
+        contact: "CONTACTO",
+        
+        // Navigation and buttons
+        back: "Volver a proyectos",
+        next_project: "Siguiente Proyecto",
+        
+        // Project info
+        project_overview: "Resumen del Proyecto",
+        project_text_1: "Velox es una plataforma de comercio electrónico integral diseñada para entusiastas del ciclismo y desplazamientos urbanos. El proyecto se centró en crear una experiencia digital intuitiva que combina descubrimiento de productos, personalización y compras fluidas en una plataforma unificada.",
+        project_text_2: "El diseño enfatiza la estética moderna con elementos neón de alto contraste, creando una identidad de marca tecnológica que atrae tanto a ciclistas casuales como profesionales. La plataforma cuenta con filtrado avanzado, herramientas de personalización de productos y un sistema integrado de reserva de servicios.",
+        
+        // Design process
+        design_process: "Proceso de Diseño",
+        research_title: "01. Investigación",
+        research_text: "El proyecto comenzó con un análisis profundo del mercado y perfiles de usuario para entender las tendencias en la cultura ciclista y el comportamiento del consumidor. Los conocimientos de informes de la industria y estudios de competidores destacaron una demanda creciente de personalización, transporte sostenible y experiencias digitales fáciles de usar, particularmente entre ciclistas urbanos y atletas conocedores de la tecnología.",
+        brand_strategy_title: "02. Arquitectura de Información",
+        brand_strategy_text: "Utilizando los conocimientos recopilados, diseñé una arquitectura de información clara y escalable que agrupó productos y servicios en categorías intuitivas. Esta estructura soportó navegación fácil a través de un catálogo diverso: bicicletas, accesorios, ropa y servicios de mantenimiento, asegurando que los usuarios pudieran encontrar lo que necesitaban rápida y confidencialmente.",
+        visual_identity_title: "03. Diseño de UI",
+        visual_identity_text: "El diseño visual combinó una paleta neón de alto contraste con acentos oscuros, evocando una identidad de marca moderna y tecnológica. Desarrollé un sistema de diseño modular y seleccioné tipografía audaz e imágenes dinámicas para crear una interfaz profesional pero energética. Iconos personalizados y etiquetas de productos interactivas mejoraron aún más la usabilidad y consistencia de marca.",
+        packaging_design_title: "04. Prototipado y Pruebas",
+        packaging_design_text: "Se crearon y probaron prototipos de alta fidelidad para validar supuestos de diseño y refinar flujos de usuario clave, desde navegar productos hasta completar compras. Las sesiones de retroalimentación de usuarios ayudaron a optimizar el proceso de pago, sistema de filtrado de productos y experiencia de navegación general.",
+
+        // Figma
+        figma_prototype: "Prototipo de Figma",
+
+        // Contact section
+        lets_connect: "CONECTA<br>CONMIGO",
+        email: "CORREO",
+        instagram: "INSTAGRAM",
+        linkedin: "LINKEDIN",
+        by_laura: "LAURA FONSECA<br>2025<br>TODOS LOS DERECHOS RESERVADOS"
+      }
+    };
+
+    // VARIABLE PARA IDIOMA ACTUAL
+    let currentLanguage = 'en'; // Idioma por defecto
+
+    // FUNCIÓN PARA CAMBIAR IDIOMA
+    function changeLanguage(lang) {
+      currentLanguage = lang;
+      
+      // Actualizar clases activas de los botones de idioma
+      document.querySelectorAll('.lang-option').forEach(option => {
+        option.classList.remove('active');
+      });
+      document.getElementById(`lang-${lang}`).classList.add('active');
+      
+      // Traducir todos los elementos
+      translatePage();
+      
+      // Guardar preferencia en localStorage (opcional)
+      localStorage.setItem('preferredLanguage', lang);
+    }
+
+    // FUNCIÓN PARA TRADUCIR LA PÁGINA
+    function translatePage() {
+      const elements = document.querySelectorAll('[data-translate]');
+      
+      elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[currentLanguage] && translations[currentLanguage][key]) {
+          if (element.innerHTML.includes('<br>')) {
+            element.innerHTML = translations[currentLanguage][key];
+          } else {
+            element.textContent = translations[currentLanguage][key];
+          }
+        }
       });
     }
 
-    // Custom cursor interactions
-    if (window.innerWidth > 768 && cursor) {
-      const interactiveElements = document.querySelectorAll('a, button');
-      interactiveElements.forEach(element => {
-        element.addEventListener('mouseenter', () => {
-          gsap.to(cursor, {
-            scale: 1.5,
-            opacity: 0.7,
-            duration: 0.3,
-            ease: 'power2.out'
-          });
-        });
-        element.addEventListener('mouseleave', () => {
-          gsap.to(cursor, {
-            scale: 1,
-            opacity: 1,
-            duration: 0.3,
-            ease: 'power2.out'
-          });
-        });
-      });
+    // FUNCIÓN PARA DETECTAR IDIOMA DEL NAVEGADOR (opcional)
+    function detectBrowserLanguage() {
+      const browserLang = navigator.language || navigator.userLanguage;
+      if (browserLang.startsWith('es')) {
+        return 'es';
+      }
+      return 'en';
     }
+
+    // INICIALIZACIÓN
+    document.addEventListener('DOMContentLoaded', function() {
+      // Recuperar idioma guardado o detectar idioma del navegador
+      const savedLanguage = localStorage.getItem('preferredLanguage');
+      if (savedLanguage && translations[savedLanguage]) {
+        currentLanguage = savedLanguage;
+      } else {
+        currentLanguage = detectBrowserLanguage();
+      }
+      
+      // Configurar event listeners para los botones de idioma
+      document.getElementById('lang-es').addEventListener('click', () => changeLanguage('es'));
+      document.getElementById('lang-en').addEventListener('click', () => changeLanguage('en'));
+      
+      // Aplicar idioma inicial
+      changeLanguage(currentLanguage);
+    });
   </script>
 </body>
 </html>
