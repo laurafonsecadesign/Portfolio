@@ -17,7 +17,6 @@ body {
   color: #000;
   margin: 0;
   height: 100%;
-  cursor: none; /* Hide default cursor */
   overflow-x: hidden;
 }
 
@@ -36,7 +35,6 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  cursor: none;
 }
 
 /* Custom Cursor */
@@ -718,6 +716,97 @@ footer {
     line-height: 120px;
   }
 }
+@media (max-width: 1024px) {
+  .main-header {
+    padding: 2rem 2rem;
+  }
+  .header-content {
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  .hero {
+    padding: 100px 40px 40px 40px;
+    gap: 20px;
+  }
+  .nombre-laura {
+    font-size: 120px;
+  }
+  .nombre-fonseca {
+    font-size: 90px;
+  }
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  .about-img img {
+    width: 250px;
+    height: 220px;
+  }
+  .about-text p {
+    font-size: 22px;
+  }
+  .info-block {
+    margin: 40px 20px;
+    padding: 24px;
+  }
+  .info-row {
+    gap: 24px;
+  }
+  .info-item h3 {
+    font-size: 36px;
+    margin-bottom: 18px;
+    line-height: 1.1;
+  }
+  .work {
+    padding: 40px 20px 20px 20px;
+  }
+  .work h2 {
+    font-size: 60px;
+    line-height: 1.1;
+  }
+  .project {
+    min-height: 350px;
+    padding: 12px 0;
+    gap: 12px;
+  }
+  .project-image img {
+    height: 220px;
+    max-height: 220px;
+  }
+  .project h3 {
+    font-size: 36px;
+  }
+  .project-cat, .project-year {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .contact {
+    padding: 20px;
+    height: 400px;
+  }
+  .contact h2 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    bottom: 30px;
+    padding: 0 10px;
+  }
+  .contact-links {
+    gap: 18px;
+    font-size: 14px;
+  }
+  .contact-image {
+    width: 80px;
+    height: 80px;
+  }
+}
 @media (max-width: 900px) {
   .nombre-laura, .nombre-fonseca {
     font-size: 150px;
@@ -756,7 +845,7 @@ footer {
   }
   
   .contact-symbol {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 600px) {
@@ -802,7 +891,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    bottom: 160px;
+    bottom: 80px;
   }
   
   .contact-links {

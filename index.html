@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -163,6 +162,7 @@
           <div class="info-item">
             <h3 data-translate="others">Others</h3>
             <ul>
+              <li><b>Polimi Summer Break</b><br>“Designing Dialogues for Peaceful Ecosystems”<br>Politecnico di Milano & TU Delft.<br>June 2025</li>
               <li><b data-translate="language_immersion">Language immersion</b><br><span data-translate="language_immersion_desc">Bury St. Edmunds: Culford School. 2017.</span></li>
               <li><b data-translate="academic_debate">Academic debate</b><br>TIDE 2022</li>
               <li><b>Animacamp</b><br>ESNE <span data-translate="june">June</span> 2022</li>
@@ -262,6 +262,26 @@
             <span class="project-year">2025</span>
           </div>
         </article>
+        <!-- 3CERDITOS -->
+        <article class="project" data-category="Branding">
+          <div class="project-image">
+            <a href="3cerditos.html">
+              <img src="3cerditos/fotos3c4.png" alt="3CERDITOS project image">
+            </a>
+            <div class="project-details">
+              <a href="3cerditos.html" class="view-btn" data-translate="view">View</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="frame-7">
+              <h3>3CERDITOS</h3>
+              <div class="div-wrapper">
+                <span class="project-cat" data-translate="branding">Branding</span>
+              </div>
+            </div>
+            <span class="project-year">2024</span>
+          </div>
+        </article>
       </div>
     </section>
     <!-- Contact Section -->
@@ -291,7 +311,7 @@
 
     // Custom cursor
     const cursor = document.querySelector('.cursor');
-    if (window.innerWidth > 768 && cursor) {
+    if (cursor) {
       document.addEventListener('mousemove', (e) => {
         gsap.to(cursor, {
           x: e.clientX,

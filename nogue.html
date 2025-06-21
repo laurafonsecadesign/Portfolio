@@ -339,7 +339,7 @@
 
     // Custom cursor
     const cursor = document.querySelector('.cursor');
-    if (window.innerWidth > 768 && cursor) {
+    if (cursor) {
       document.addEventListener('mousemove', (e) => {
         gsap.to(cursor, {
           x: e.clientX,
