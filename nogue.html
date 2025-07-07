@@ -174,9 +174,9 @@
 
     <!-- Next Project -->
     <section class="next-project">
-      <a href="applaws.html" class="next-project-link">
+      <a href="3cerditos.html" class="next-project-link">
         <span class="next-label" data-translate="next_project">Next Project</span>
-        <h3 class="next-title">Applaws</h3>
+        <h3 class="next-title">3CERDITOS</h3>
       </a>
     </section>
 
@@ -339,7 +339,8 @@
 
     // Custom cursor
     const cursor = document.querySelector('.cursor');
-    if (cursor) {
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+    if (cursor && !isTouchDevice) {
       document.addEventListener('mousemove', (e) => {
         gsap.to(cursor, {
           x: e.clientX,
@@ -348,6 +349,8 @@
           ease: 'power1.out'
         });
       });
+    } else if (cursor) {
+      cursor.style.display = 'none';
     }
 
     // Page animations
@@ -437,7 +440,7 @@
     });
 
     // Custom cursor interactions
-    if (window.innerWidth > 768 && cursor) {
+    if (window.innerWidth > 768 && cursor && !isTouchDevice) {
       const interactiveElements = document.querySelectorAll('a, button');
       interactiveElements.forEach(element => {
         element.addEventListener('mouseenter', () => {

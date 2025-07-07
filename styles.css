@@ -1254,4 +1254,63 @@ footer {
   .project-image .project-details {
     display: none;
   }
+}
+
+@media (pointer: coarse), (hover: none) {
+  .cursor {
+    display: none !important;
+  }
+  .project:hover .project-image img,
+  .project:hover .project-details,
+  .main-header nav ul li:hover {
+    /* Desactivar efectos hover en tablet/touch */
+    opacity: 1 !important;
+    scale: 1 !important;
+    filter: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    padding: 40px 60px;
+  }
+  .about-text p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1024px) {
+  .about {
+    padding: 30px 30px;
+  }
+  .about-text p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 16px;
+    gap: 30px;
+  }
+  .about-img img {
+    width: 220px;
+    height: 180px;
+  }
+  .about-text p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .about {
+    padding: 16px 8px;
+    gap: 16px;
+  }
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
 } 

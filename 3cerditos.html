@@ -173,7 +173,8 @@
     gsap.registerPlugin(ScrollTrigger);
     // Custom cursor
     const cursor = document.querySelector('.cursor');
-    if (cursor) {
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+    if (cursor && !isTouchDevice) {
       document.addEventListener('mousemove', (e) => {
         gsap.to(cursor, {
           x: e.clientX,
@@ -182,6 +183,8 @@
           ease: 'power1.out'
         });
       });
+    } else if (cursor) {
+      cursor.style.display = 'none';
     }
     // Mobile menu toggle
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
@@ -217,7 +220,7 @@
       initLanguageSelector();
     });
     // Custom cursor interactions
-    if (window.innerWidth > 768 && cursor) {
+    if (window.innerWidth > 768 && cursor && !isTouchDevice) {
       const interactiveElements = document.querySelectorAll('a, button');
       interactiveElements.forEach(element => {
         element.addEventListener('mouseenter', () => {

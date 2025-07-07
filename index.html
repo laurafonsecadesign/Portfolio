@@ -76,6 +76,7 @@
             <ul>
               <li><b data-translate="spanish_native">Spanish (Native)</b></li>
               <li><b data-translate="english_c2">English (C2 - Proficiency Cambridge Certificate)</b></li>
+              <li><b data-translate="german_a1">German (A1 - Goethe Institute)</b></li>
             </ul>
           </div>
         </div>
@@ -162,11 +163,11 @@
           <div class="info-item">
             <h3 data-translate="others">Others</h3>
             <ul>
-              <li><b>Polimi Summer Break</b><br>“Designing Dialogues for Peaceful Ecosystems”<br>Politecnico di Milano & TU Delft.<br>June 2025</li>
-              <li><b data-translate="language_immersion">Language immersion</b><br><span data-translate="language_immersion_desc">Bury St. Edmunds: Culford School. 2017.</span></li>
-              <li><b data-translate="academic_debate">Academic debate</b><br>TIDE 2022</li>
+              <li><b>Polimi Summer Break</b><br>"Designing Dialogues for Peaceful Ecosystems"<br>Politecnico di Milano & TU Delft.<br>June 2025</li>
               <li><b>Animacamp</b><br>ESNE <span data-translate="june">June</span> 2022</li>
+              <li><b data-translate="academic_debate">Academic debate</b><br>TIDE 2022</li>
               <li><b>Technovation girls</b><br><span data-translate="january">January</span>-<span data-translate="june">June</span> 2021</li>
+              <li><b data-translate="language_immersion">Language immersion</b><br><span data-translate="language_immersion_desc">Bury St. Edmunds: Culford School. 2017.</span></li>
             </ul>
           </div>
         </div>
@@ -311,7 +312,8 @@
 
     // Custom cursor
     const cursor = document.querySelector('.cursor');
-    if (cursor) {
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+    if (cursor && !isTouchDevice) {
       document.addEventListener('mousemove', (e) => {
         gsap.to(cursor, {
           x: e.clientX,
@@ -320,6 +322,8 @@
           ease: 'power1.out'
         });
       });
+    } else if (cursor) {
+      cursor.style.display = 'none';
     }
 
     // Mobile menu toggle
@@ -654,7 +658,7 @@
     });
 
     // Custom cursor interactions
-    if (window.innerWidth > 768 && cursor) {
+    if (window.innerWidth > 768 && cursor && !isTouchDevice) {
       const interactiveElements = document.querySelectorAll('a, button, .project');
       interactiveElements.forEach(element => {
         element.addEventListener('mouseenter', () => {
@@ -721,6 +725,7 @@ const translations = {
     languages: "Languages",
     spanish_native: "Spanish (Native)",
     english_c2: "English (C2 - Proficiency Cambridge Certificate)",
+    german_a1: "German (A1 - Goethe Institute)",
     skills: "Skills",
     creativity: "Creativity",
     communication: "Communication",
@@ -775,6 +780,7 @@ const translations = {
     languages: "Idiomas",
     spanish_native: "Español (Nativo)",
     english_c2: "Inglés (C2 - Certificado Cambridge Proficiency)",
+    german_a1: "Alemán (A1 - Goethe Institute)",
     skills: "Habilidades",
     creativity: "Creatividad",
     communication: "Comunicación",

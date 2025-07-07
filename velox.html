@@ -219,7 +219,8 @@
 
     // Custom cursor
     const cursor = document.querySelector('.cursor');
-    if (cursor) {
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+    if (cursor && !isTouchDevice) {
       document.addEventListener('mousemove', (e) => {
         gsap.to(cursor, {
           x: e.clientX,
@@ -228,6 +229,8 @@
           ease: 'power1.out'
         });
       });
+    } else if (cursor) {
+      cursor.style.display = 'none';
     }
 
     // Mobile menu toggle
@@ -327,27 +330,27 @@
     });
 
     // Custom cursor interactions
-    const interactiveElements = document.querySelectorAll('a, button');
-    
-    interactiveElements.forEach(element => {
-      element.addEventListener('mouseenter', () => {
-        gsap.to(cursor, {
-          scale: 1.5,
-          opacity: 0.7,
-          duration: 0.3,
-          ease: 'power2.out'
+    if (!isTouchDevice) {
+      const interactiveElements = document.querySelectorAll('a, button');
+      interactiveElements.forEach(element => {
+        element.addEventListener('mouseenter', () => {
+          gsap.to(cursor, {
+            scale: 1.5,
+            opacity: 0.7,
+            duration: 0.3,
+            ease: 'power2.out'
+          });
+        });
+        element.addEventListener('mouseleave', () => {
+          gsap.to(cursor, {
+            scale: 1,
+            opacity: 1,
+            duration: 0.3,
+            ease: 'power2.out'
+          });
         });
       });
-      
-      element.addEventListener('mouseleave', () => {
-        gsap.to(cursor, {
-          scale: 1,
-          opacity: 1,
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      });
-    });
+    }
 
     // TRANSLATION SYSTEM
     const translations = {
